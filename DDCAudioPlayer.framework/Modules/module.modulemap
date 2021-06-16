@@ -1,0 +1,11 @@
+framework module DDCAudioPlayer {
+  umbrella header "DDCAudioPlayer.h"
+
+  export *
+  module * { export * }
+}
+
+module DDCAudioPlayer.Swift {
+    header "DDCAudioPlayer-Swift.h"
+    requires objc
+}

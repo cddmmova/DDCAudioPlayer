@@ -30,13 +30,14 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'DDCAudioPlayer/Classes/**/*'
+  #s.source_files = 'DDCAudioPlayer/Classes/**/*'
   
   # s.resource_bundles = {
   #   'DDCAudioPlayer' => ['DDCAudioPlayer/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'AVKit', 'Foundation'
+  s.vendored_frameworks = 'DFFramework.framework'
+  s.dependency 'KTVHTTPCache', '~> 2.0.0'
 end
